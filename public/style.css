@@ -30,7 +30,7 @@ body{
     margin: 8px 0 0;
   }
   footer{
-    background: #eee;
+    background: #199193;
     padding: 60px;
     margin-top: 60px;
   }
@@ -66,7 +66,7 @@ body{
   footer a{
     text-align: center;
     display: block;
-    color: #999;
+    color: #2a56d9;
     margin-top: 40px;
     font-size: 0.7em;
   }
