@@ -15,19 +15,16 @@ const amount = document.querySelector('#amount') as HTMLInputElement;
 const ul= document.querySelector('ul')!;
 const list= new listTemplate(ul);
 
-form.addEventListener('submit', (e)=>{
+form.addEventListener('submit', (e) => {
     e.preventDefault();
     let doc:Hasformatter;
-
-    if (type.value==='Invoice'){
-     
-
-        doc=new Invoice(tofrom.value, details.value, amount.valueAsNumber);
-    }else{
-        doc=new Payment(tofrom.value, details.value, amount.valueAsNumber)
+    if(type.value==='invoice'){
+        doc=new Invoice(tofrom.value, details.value, amount.valueAsNumber)
+    } else{
+        doc = new Payment(tofrom.value, details.value, amount.valueAsNumber)
     }
 
-    list.render(doc, type.value, 'end');
+    list.render(doc,type.value,'end');
 
     console.log(
         type.value, 
@@ -35,4 +32,4 @@ form.addEventListener('submit', (e)=>{
         details.value, 
         amount.valueAsNumber,
         doc);
-})
+});

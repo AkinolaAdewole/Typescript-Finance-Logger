@@ -13,7 +13,7 @@ const list = new listTemplate(ul);
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     let doc;
-    if (type.value === 'Invoice') {
+    if (type.value === 'invoice') {
         doc = new Invoice(tofrom.value, details.value, amount.valueAsNumber);
     }
     else {

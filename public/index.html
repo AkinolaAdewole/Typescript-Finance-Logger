@@ -1,52 +1,46 @@
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TypeScript Tutorial</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeScript Tutorial</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Finance Tracker</h1>
+    </div>
 
-  <div class="wrapper">
-    <h1>Finance Tracker</h1>
+    <footer>
+      <form class="new-item-form">
+        <div class="field">
+          <label>Type:</label>
+          <select id="type">
+            <option value="invoice">Invoice</option>
+            <option value="payment">Payment</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>To / From:</label>
+          <input type="text" id="tofrom" />
+        </div>
+        <div class="field">
+          <label>Details:</label>
+          <input type="text" id="details" />
+        </div>
+        <div class="field">
+          <label>Amount (£):</label>
+          <input type="number" id="amount" />
+        </div>
+        <button type="submit">Add</button>
+      </form>
 
-   
-  </div>
+      <h3 class="text">Akinola Adewole</h3>
+    </footer>
 
-  <footer>
-    <form class="new-item-form">
-      <div class="field">
-        <label>Type:</label>
-        <select id="type">
-          <option value="invoice">Invoice</option>
-          <option value="payment">Payment</option>
-        </select>
-      </div>
-      <div class="field">
-        <label>To / From:</label>
-        <input type="text" id="tofrom">
-      </div>   
-      <div class="field">
-        <label>Details:</label>
-        <input type="text" id="details">
-      </div>
-      <div class="field">
-        <label>Amount (£):</label>
-        <input type="number" id="amount">
-      </div>
-      <button type="submit">Add</button>
-    </form>
-
-    <a href="https://www.thenetninja.co.uk">Akinola Adewole</a>
-  </footer>
-
-  <div>
-
-     <!-- output list -->
-     <ul class="item-list">
-      
-     </ul>
-  </div>
-</body>
-<script type="module" src="App.js"></script>
+    <div>
+      <!-- output list -->
+      <ul class="item-list"></ul>
+    </div>
+  </body>
+  <script type="module" src="App.js"></script>
 </html>
